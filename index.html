@@ -21,39 +21,41 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <main class="card">
-      <img src="./images/illustration-hero.svg" alt="dancing" />
+    <main>
+      <div class="card">
+        <img src="./images/illustration-hero.svg" alt="dancing" />
 
-      <section class="content">
-        <h1 class="title">Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-        <div class="payplan">
-          <div class="payplan--plan">
-            <img src="./images/icon-music.svg" alt="" />
-            <span class="payplan--plan__type">Annual Plan</span>
-            <span class="payplan--plan__price">$59.99/year</span>
+        <section class="content">
+          <h1 class="title">Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="payplan">
+            <div class="payplan--plan">
+              <img src="./images/icon-music.svg" alt="" />
+              <span class="payplan--plan__type">Annual Plan</span>
+              <span class="payplan--plan__price">$59.99/year</span>
+            </div>
+
+            <a href="#">Change</a>
           </div>
-
-          <a href="#">Change</a>
+          <button class="btn btn--payement">Proceed to Payment</button>
+          <button class="btn btn--cancel">Cancel Order</button>
+        </section>
+        <div class="bg">
+          <img
+            srcset="
+              ./images/pattern-background-mobile.svg   375w,
+              ./images/pattern-background-desktop.svg 1440w
+            "
+            sizes="(max-width:375px) 375px, 1440px"
+            src="./images/pattern-background-desktop.svg"
+            alt="desktop background"
+            class="bg--desktop"
+          />
         </div>
-        <button class="btn btn--payement">Proceed to Payment</button>
-        <button class="btn btn--cancel">Cancel Order</button>
-      </section>
+      </div>
     </main>
-    <div class="bg">
-      <img
-        srcset="
-          ./images/pattern-background-mobile.svg   375w,
-          ./images/pattern-background-desktop.svg 1440w
-        "
-        sizes="(max-width:375px) 375px, 1440px"
-        src="./images/pattern-background-desktop.svg"
-        alt="desktop background"
-        class="bg--desktop"
-      />
-    </div>
   </body>
 </html>

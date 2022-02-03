@@ -75,4 +75,109 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #e0e8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: #f5f7ff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  width: 45rem;
+}
+
+.card .content {
+  margin: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.card .content .title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1f2f56;
+  text-align: center;
+}
+
+.card .content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #7280a7;
+  text-align: center;
+  margin: 2rem;
+}
+
+.card .content .payplan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 4rem 4rem 4rem;
+}
+
+.card .content .payplan--plan {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.card .content .payplan--plan img {
+  grid-row: span 2;
+}
+
+.card .content .payplan--plan__type {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #1f2f56;
+  grid-column: span 2;
+}
+
+.card .content .payplan--plan__price {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #7280a7;
+  grid-column: span 2;
+}
+
+.card .content .payplan a {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #3829e0;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,2 +1,82 @@
-@import 'reset';
-@import 'variables';
+@import "reset";
+@import "variables";
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-color: $paleBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: $veryPaleBlue;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    width: 45rem;
+    .content{
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .title{
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: $darkBlue;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $desaturatedBlue;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .payplan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 4rem 4rem 4rem;
+           
+            &--plan {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr 1fr;
+                column-gap: 2rem;
+                
+
+                img {
+                    grid-row: span 2;
+                }
+
+                &__type {
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    color: $darkBlue;
+                    grid-column: span 2;
+                }
+                &__price{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: $desaturatedBlue;
+                    grid-column: span 2;
+                }
+            }
+
+            a {
+                font-size: 1.2rem;
+                font-weight: 900;
+                color: $brightBlue;
+            }
+        }
+    }
+}

@@ -102,19 +102,9 @@ body {
   z-index: -1;
 }
 
-.bg--mobile {
-  display: none;
-}
-
 @media only screen and (max-device-width: 375px) {
   html {
     font-size: 45.5%;
-  }
-  .bg--desktop {
-    display: none;
-  }
-  .bg--mobile {
-    display: block;
   }
 }
 
@@ -124,6 +114,8 @@ body {
   overflow: hidden;
   width: 45rem;
   margin: 5rem 0;
+  -webkit-box-shadow: 0 2rem 1rem 0 rgba(31, 47, 86, 0.1);
+          box-shadow: 0 2rem 1rem 0 rgba(31, 47, 86, 0.1);
 }
 
 .card .content {

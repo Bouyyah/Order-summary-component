@@ -41,7 +41,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### What I learned
 
-I used this project to mix flexbox and grid layout, as specefied within the challenge i used the active pseudo class to change css, the handling of the svg backgrouds was a bit tricky but i managed to do it with position absolute and z-index manipulation.
+I used this project to mix flexbox and grid layout, as specefied within the challenge i used the active pseudo class to change css, the handling of the svg backgrounds with wich i discovered responsive images in HTML by the use of srcset and sizes Atrributes.
 
 
 

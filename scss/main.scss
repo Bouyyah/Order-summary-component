@@ -19,21 +19,14 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  &--mobile {
-    display: none;
-  }
+ 
 }
 
 @media only screen and (max-device-width: 375px) {
   html {
     font-size: 45.5%;
   }
-  .bg--desktop {
-    display: none;
-  }
-  .bg--mobile {
-    display: block;
-  }
+ 
 }
 
 .card {
@@ -42,7 +35,7 @@ body {
   overflow: hidden;
   width: 45rem;
   margin: 5rem 0;
-
+  box-shadow: 0 2rem 1rem 0 rgba($darkBlue, .1);
   .content {
     margin: 3rem;
     display: flex;

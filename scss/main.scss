@@ -6,16 +6,34 @@ html {
   font-family: "Karla", sans-serif;
   font-family: "Red Hat Display", sans-serif;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
-  html {
-    font-size: 52.5%;
-  }
-}
+
 body {
   background-color: $paleBlue;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &--mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  html {
+    font-size: 45.5%;
+  }
+  .bg--desktop {
+    display: none;
+  }
+  .bg--mobile {
+    display: block;
+  }
 }
 
 .card {
@@ -80,6 +98,10 @@ body {
         font-size: 1.45rem;
         font-weight: 900;
         color: $brightBlue;
+        &:active {
+          color: $desaturatedBlue;
+          text-decoration: none;
+        }
       }
     }
 
@@ -90,14 +112,23 @@ body {
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
+      &:hover {
+        cursor: pointer;
+      }
       &--payement {
         color: $veryPaleBlue;
         background-color: $brightBlue;
-        box-shadow: 0 1.5rem 2rem 0 rgba($desaturatedBlue, .2);
+        box-shadow: 0 1.5rem 2rem 0 rgba($desaturatedBlue, 0.2);
+        &:active {
+            background-color: $desaturatedBlue;
+        }
       }
-      &--cancel{
+      &--cancel {
         color: $desaturatedBlue;
         background-color: $veryPaleBlue;
+        &:active {
+            color: $darkBlue;
+        }
       }
     }
   }

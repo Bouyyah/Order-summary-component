@@ -82,6 +82,12 @@ html {
   font-family: "Red Hat Display", sans-serif;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
 body {
   background-color: #e0e8ff;
   display: -webkit-box;
